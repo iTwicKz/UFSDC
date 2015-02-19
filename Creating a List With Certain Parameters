@@ -1,0 +1,11 @@
+multiples_of_seven = []
+
+for x ub range(100):
+  if x % 7 == 0:
+    multiples_of_seven.append(x)
+    
+    
+    
+    
+    
+multiples_of_seven = [x for x in range(100) if x % 7 == 0]
