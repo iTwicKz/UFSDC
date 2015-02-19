@@ -1,0 +1,2 @@
+def defe(lines)
+  return sorted(set(lines))
