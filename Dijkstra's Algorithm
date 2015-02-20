@@ -1,30 +1,39 @@
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class Drive {
 	public static void main(String[] args){
-		Scanner input = new Scanner(System.in);
-		int numOfCases = input.nextInt();
-		
-		int numOfVert = input.nextInt();
-		int numOfPaths = input.nextInt();
-		
-		int[][] paths = new int[numOfPaths][2];
-		for(int i = 0; i < numOfVerts; i++){
+			Scanner input = new Scanner(System.in);
+			int numOfCases = input.nextInt();
 			
-		}
-		
-		
+			int numOfVert = input.nextInt();
+			int numOfPaths = input.nextInt();
+			
+			int[][] paths = new int[numOfPaths][2];
+			int[] weights = new int[numOfPaths];
+			
+			for(int i = 0; i < numOfPaths; i++){
+				int start = input.nextInt();
+				paths[i][0] = start;
+				int finish = input.nextInt();
+				paths[i][1] = finish;
+				int weight = input.nextInt();
+				weights[i] = weight;
+				}
+			
+	
+			int start = input.nextInt();
+			int goal = input.nextInt();
+			
+			
+			
+			
 	}
+			
 }
-
-
-
-
-
 
 static int hasPath(int a, int b){
 	for(int i = 1; i <= 2; i++){
-		if(paths[i][0] == a && paths[i][2]){
+		if(paths[i][0] == a && paths[i][1]){
 			return i;
 		}
 	}
